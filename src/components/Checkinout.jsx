@@ -71,8 +71,9 @@ function HotelSearch() {
             <option value="himachal-pradesh">Neil Island</option>
           </select>
         </div>
-        <div className="flex justify-between w-full max-w-md"></div>
+        <div className="flex justify-between w-full max-w-md">
             <button onClick={()=> setModal(!modal)} type="text" className="w-[1000px]" >{`${room} Room(s),  ${adult + children + infant} Guest(s)`}</button>
+            </div>
         <div className={`absolute bg-white border border-slate-600 rounded-xl right-[550px] mt-[85px] p-7 z-10 ${!modal ? "hidden" : "visible"}`}>
             <div className="flex justify-between text-xl ">
                 <span>Adult</span> <span className="flex pl-5"><button className="text-3xl" onClick={handleAdultClickneg}>-</button> <input className="w-5 text-center mx-5" disabled type="" value={adult} /> <button className="text-2xl" onClick={handleAdultClickpos}>+</button></span>
