@@ -40,7 +40,7 @@ function App() {
           <Route path='/packages' element={<Packages/>}  /> 
           <Route path='/pg' element={<PgPage/>}  /> 
           <Route path='/hotels' element={<Hotels/>}  /> 
-          <Route path='/flights' element={<Flights/>}  /> 
+          <Route path='/' element={<Flights/>}  /> 
           <Route path='/ships' element={<Ships/>}  /> 
           <Route path='/hotel-form' element={<FormPage/>}  /> 
         </Routes>
