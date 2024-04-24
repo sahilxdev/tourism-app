@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-center">
       <div className="w-[70vw] flex justify-evenly mt-5">
-        <Link to={"/flights" || "/"}>
+        <Link to={"/"}>
           <div className="flex flex-col items-center focus:ring-2 text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-2 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <FlightIcon />
