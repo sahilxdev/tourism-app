@@ -121,8 +121,8 @@ const NavBar = () => {
             <div className="text-sm font-medium text-gray-600">SHOP</div>
           </div>
         </Link>
-        <Link className="absolute right-40 top-[22px]" to={'/hotel-form'}>
-          <button className="px-4 bg-green-600 rounded-xl">Form</button>
+        <Link className="absolute right-40 top-[12px]" to={'/hotel-form'}>
+          <button className="w-24 h-10 px-4 bg-green-600 hover:bg-green-700 rounded-xl">Form</button>
         </Link>
       </div>
     </div>

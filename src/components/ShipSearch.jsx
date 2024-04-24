@@ -95,7 +95,7 @@ function ShipSearch() {
           <label htmlFor="travellers" className="mb-2 text-sm font-medium text-black">
             Select Travellers
           </label>
-          <div className="flex justify-between w-full max-w-24 bg-white rounded-xl ">
+          <div className="flex justify-between w-full max-w-36 cursor-pointer bg-white hover:bg-slate-200 px-8  rounded-xl ">
             <button onClick={()=> setModal(!modal)} type="text" className="w-[1000px]  " >{`${room} Room(s),  ${adult + children + infant} Guest(s)`}</button>
           </div>
         <div className={`absolute bg-white border border-slate-600 rounded-xl right-[550px] mt-[85px] p-7 z-10 ${!modal ? "hidden" : "visible"}`}>
@@ -115,13 +115,13 @@ function ShipSearch() {
         </div>
       </div>
       <div className="flex justify-center w-full max-w-md mt-4">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md shadow-sm">
+        <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md shadow-sm">
           Search
         </button>
       </div>
 
       <div >
-        <h1>Your Search Results</h1>
+        <h1 className='text-center text-3xl my-6 font-medium'>Your Search Results</h1>
         <div className='flex flex-col gap-8'>
         <ShipCard/>
         <ShipCard/>

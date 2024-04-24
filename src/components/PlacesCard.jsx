@@ -21,13 +21,13 @@ const PlacesCard = ({ title, subtitle, reviews, imageUrl }) => {
 
   return (
     <div className="grid card w-82 rounded-lg shadow-md overflow-clip">
-      <div className="relative">
+      <div className="relative z-[10]">
         <img
           src={imageUrl[currentImage]}
           alt={title}
           className="w-full h-72 object-cover rounded-t-lg"
         />
-        <div className="absolute w-full flex justify-between top-0">
+        <div className="absolute w-full flex justify-between top-0 cursor-pointer z-[10]">
           <button
             onClick={handlePrevClick}
             className="bg-blue-200 hover:bg-blue-400 px-1  from-black opacity-20 hover:opacity-70 to-transparent font-extrabold
@@ -37,7 +37,7 @@ const PlacesCard = ({ title, subtitle, reviews, imageUrl }) => {
           </button>
           <button
             onClick={handleForwClick}
-            className="bg-blue-200 hover:bg-blue-400 font-extrabold  px-1 from-black opacity-20 hover:opacity-70 to-transparent rounded-l-xl text-white  py-5 text-xl text-center ml-1 h-[14.5em]"
+            className="bg-blue-200 hover:bg-blue-400 font-extrabold px-1 from-black opacity-20 hover:opacity-70 to-transparent rounded-l-xl text-white  py-5 text-xl text-center ml-1 h-[14.5em]"
           >
             {">"}
           </button>

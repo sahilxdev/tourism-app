@@ -48,7 +48,7 @@ function FlightSearch() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-blue-900 opacity-80 to-transparent mt-2 min-h-96 flex flex-col justify-center items-center">
+    <div className="p-8 bg-gradient-to-b from-blue-900 opacity-80 to-transparent mt-2 min-h-96 flex flex-col justify-center items-center">
       <h1 className="text-3xl font-bold mb-8 text-white">
         Search your flights
       </h1>
@@ -117,6 +117,7 @@ function FlightSearch() {
             type="date"
             id="return"
             name="return"
+            defaultValue="2024-05-24"
             className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500"
             placeholder="Tap to add a return date"
           />
@@ -131,7 +132,7 @@ function FlightSearch() {
             Travellers
           </label>
           <div>
-            <div className="flex justify-between w-full max-w-24 bg-white rounded-xl">
+            <div className="flex  w-full max-w-36 cursor-pointer bg-white hover:bg-slate-200 px-8  rounded-xl">
               <button
                 onClick={() => setModal(!modal)}
                 type="text"
@@ -141,7 +142,7 @@ function FlightSearch() {
               } Guest(s)`}</button>
             </div>
             <div
-              className={`absolute bg-white border border-slate-600 rounded-xl right-[770px] mt-[10px] p-7 z-10 ${
+              className={`absolute bg-white border border-slate-600 rounded-xl right-[610px] mt-[-200px] p-7  ${
                 !modal ? "hidden" : "visible"
               }`}
             >
@@ -216,10 +217,11 @@ function FlightSearch() {
             </div>
           </div>
         </div>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md shadow-sm">
+        <button className="w-40 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-8 rounded-md shadow-sm">
           Search
         </button>
       </div>
+      <h1 className='text-center text-3xl mt-12 font-medium'>Your Search Results</h1>
     </div>
   );
 }
