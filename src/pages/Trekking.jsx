@@ -54,7 +54,7 @@ const Trekking = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row min-w-[100vw]">
+        <div className="flex flex-col md:flex-row min-w-[100vw] md:min-w-[40vw]">
           <div className="flex gap-2 md:gap-0 md:flex-col mx-auto lg:-translate-x-14 lg:translate-y-6 md:mx-0 md:my-auto">
             {Array(6)
               .fill(null)
@@ -105,16 +105,16 @@ const Trekking = () => {
 
       <div className="md:flex md:justify-around">
         <div>
-          <div className="grid grid-cols-2 gap-[168px] mt-2 -translate-y-[460px] md:translate-x-0 md:-translate-y-0">
+          <div className="grid grid-cols-2 gap-[168px] mt-2 -translate-y-[460px] md:translate-x-32 md:-translate-y-0">
             <button
               onClick={prevImage}
-              className="bg-blue-400 text-white rounded p-2 mr-5 align-middle"
+              className="bg-blue-400 text-white rounded p-2 mr-5 align-middle w-24"
             >
               <span className="pr-2 text-xl align-middle">〈</span> Prev
             </button>
             <button
               onClick={nextImage}
-              className="bg-blue-400 text-white align-middle rounded p-2 ml-2"
+              className="bg-blue-400 text-white align-middle rounded p-2 ml-2 w-24 "
             >
               Next <span className="pl-2 text-xl align-middle ">〉</span>
             </button>
