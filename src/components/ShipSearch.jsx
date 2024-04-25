@@ -96,9 +96,9 @@ function ShipSearch() {
             Select Travellers
           </label>
           <div className="flex justify-between w-full max-w-36 cursor-pointer bg-white hover:bg-slate-200 px-8  rounded-xl ">
-            <button onClick={()=> setModal(!modal)} type="text" className="w-[1000px]  " >{`${room} Room(s),  ${adult + children + infant} Guest(s)`}</button>
+            <button onClick={()=> setModal(!modal)} type="text" className="w-[1000px]" >{`${room} Room(s),  ${adult + children + infant} Guest(s)`}</button>
           </div>
-        <div className={`absolute bg-white border border-slate-600 rounded-xl right-[550px] mt-[85px] p-7 z-10 ${!modal ? "hidden" : "visible"}`}>
+        <div className={`absolute bg-white border border-slate-600 rounded-xl right-[20px] md:right-[550px] mt-[85px] p-7 z-10 ${!modal ? "hidden" : "visible"}`}>
             <div className="flex justify-between text-xl ">
                 <span>Adult</span> <span className="flex pl-5"><button className="text-3xl" onClick={handleAdultClickneg}>-</button> <input className="w-5 text-center mx-5" disabled type="" value={adult} /> <button className="text-2xl" onClick={handleAdultClickpos}>+</button></span>
             </div>

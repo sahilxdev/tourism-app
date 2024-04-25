@@ -4,8 +4,8 @@ import { PackagesData } from '../hooks'
 
 const Packages = () => {
   return (
-    <div className=' '>
-      <div className='grid grid-cols-3 ml-32'>
+    <div>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 md:ml-36 ml-[20vw]'>
         {PackagesData.map((item)=> 
             <PackageCard key={item.id} name={item.name} price={item.price} offerPrice={item.offerPrice} url={item.url} />
 )}

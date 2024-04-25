@@ -22,8 +22,7 @@ const PgCard = ({ url, name, location,  rating, price }) => {
             </div>
           </div>
           <div className="flex items-center text-sm">
-            
-            <span className="ml-1 mb-16 align-middle text-2xl">⭐ {rating}</span>
+            <span className="ml-1 w-20 mb-16 align-middle text-2xl">⭐ {rating}</span>
           </div>
         </div>
         <div className="flex justify-between items-center">

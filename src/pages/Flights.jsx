@@ -10,7 +10,7 @@ const Flights = () => {
             <FlightSearch /> 
         </div>
         <div className="flex justify-center">
-        <div className="mt-8 grid grid-cols-3 gap-8 z-10">
+        <div className="mt-8 grid md:grid-cols-3 gap-8 z-10">
         {IslandsData.map((items)=> (<PlacesCard
         key={1}
         reviews={items.reviews}

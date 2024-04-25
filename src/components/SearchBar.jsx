@@ -142,7 +142,7 @@ function FlightSearch() {
               } Guest(s)`}</button>
             </div>
             <div
-              className={`absolute bg-white border border-slate-600 rounded-xl right-[610px] mt-[-200px] p-7  ${
+              className={`absolute bg-white border border-slate-600 rounded-xl md:right-[610px] mt-[-250px] md:mt-[-200px] p-7  ${
                 !modal ? "hidden" : "visible"
               }`}
             >

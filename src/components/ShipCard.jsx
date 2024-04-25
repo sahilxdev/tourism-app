@@ -3,9 +3,9 @@ import React from "react";
 function ShipCard() {
     return (
     <div>
-      <div className="flex-row bg-white rounded-xl w-[70vw] py-8 h-auto shadow-[0px_4px_16px_rgba(17,34,17,0.05)] transition:origin-center hover:ease-in-out hover:scale-105 transition:duration-1000 transition-transform">
+      <div className="flex-row bg-white rounded-xl  md:w-[70vw] py-8 h-auto shadow-[0px_4px_16px_rgba(17,34,17,0.05)] transition:origin-center hover:ease-in-out hover:scale-105 transition:duration-1000 transition-transform">
         <div className="text-[#112211] flex items-center md:gap-5 gap-16 mx-auto py-auto md:px-8 px-10 text-center w-full xs:flex-col xs:py-2 xs:gap-y-3">
-          <div className="ms:hidden">
+          <div className="hidden md:block">
             <img
               src="https://t4.ftcdn.net/jpg/02/28/13/53/360_F_228135369_EWQJsS9TEskImi51e5AxpEsYsonOIBMM.jpg"
               alt="ship-logo"

@@ -4,7 +4,7 @@ import { CallIcon, EmailIcon } from "../assets/Icons";
 const CabSideBanner = () => {
   return (
   
-        <div className="w-[50%] md:w-full lg:w-[45%] xl:w-[50%] text-center  bg-gradient-to-tl from-[#408c57] to-[#91c4a0] text-white border-l-0 border border-gray-300 ">
+        <div className="mt-8 md:mt-0 text-center md:w-[70%]  bg-gradient-to-tl from-[#408c57] to-[#91c4a0] text-white border-l-0 border border-gray-300 ">
         <h1 className="mt-12 md:mt-8 text-[26px] md:text-2xl  font-montserrat font-semibold">
           Call us
         </h1>

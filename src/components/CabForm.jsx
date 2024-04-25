@@ -3,9 +3,9 @@ import CabSideBanner from "./CabSideBanner";
 
 const Form = () => {
   return (
-    <div className="w-[90%] flex justify-center items-stretch mx-auto my-6 shadow-xl rounded-lg">
+    <div className=" w-[90%] block md:flex  md:justify-center items-stretch mx-auto my-6 shadow-xl rounded-lg">
       <form
-        className="w-[50%] md:w-full lg:w-[55%] xl:w-[50%] bg-white overflow-hidden border border-gray-300 
+        className="w-full bg-white overflow-hidden border border-gray-300 
                     p-12 md:p-6 lg:p-8 "
       >
         <h1 className="text-[#699c78] text-[26px] md:text-2xl md:text-center font-montserrat font-bold mb-6 md:mb-3 tracking-wide">

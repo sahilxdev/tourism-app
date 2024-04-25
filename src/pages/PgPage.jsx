@@ -7,7 +7,7 @@ const PgPage = () => {
   return (
     <div>
       <div>
-        <div className="grid grid-cols-3 m-8 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 m-8 gap-8">
           {PgData.map((item) => (
             <PgCard
               key={item.id}
