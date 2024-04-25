@@ -70,7 +70,7 @@ function HotelSearch() {
             <option value="himachal-pradesh">Neil Island</option>
           </select>
         </div>
-        <div className="flex justify-between w-full max-w-40 rounded-lg m-2 bg-slate-200 hover:bg-slate-300">
+        <div className="flex justify-between w-full p-2 items-center max-w-40 rounded-lg m-2 bg-slate-200 hover:bg-slate-300">
           <button
             onClick={() => setModal(!modal)}
             type="text"
