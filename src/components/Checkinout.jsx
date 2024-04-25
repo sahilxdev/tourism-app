@@ -1,58 +1,57 @@
 import React, { useState } from "react";
 
 function HotelSearch() {
+  const [adult, setAdult] = useState(1);
+  const [children, setChildren] = useState(1);
+  const [infant, setInfant] = useState(1);
+  const [room, setRoom] = useState(1);
+  const [modal, setModal] = useState(false);
 
-    const [adult,setAdult] = useState(1);
-    const [children,setChildren] = useState(1);
-    const [infant, setInfant] = useState(1);
-    const [room,setRoom] = useState(1);
-    const [modal,setModal] = useState(false);
-
-    const handleAdultClickneg = ()=> {
-        if (adult > 1) {
-            setAdult(adult-1)
-        }
+  const handleAdultClickneg = () => {
+    if (adult > 1) {
+      setAdult(adult - 1);
     }
+  };
 
-    const handleAdultClickpos = ()=> {
-        setAdult(adult+1)
+  const handleAdultClickpos = () => {
+    setAdult(adult + 1);
+  };
+
+  const handleChildrenClickneg = () => {
+    if (children > 1) {
+      setChildren(children - 1);
     }
+  };
 
-    const handleChildrenClickneg = ()=> {
-        if (children > 1) {
-            setChildren(children-1)
-        }
+  const handleChildrenClickpos = () => {
+    setChildren(children + 1);
+  };
+
+  const handleInfantClickneg = () => {
+    if (infant > 1) {
+      setInfant(infant - 1);
     }
+  };
 
-    const handleChildrenClickpos = ()=> {
-        setChildren(children+1)
+  const handleInfantClickpos = () => {
+    setInfant(infant + 1);
+  };
+
+  const handleRoomClickneg = () => {
+    if (room > 1) {
+      setRoom(room - 1);
     }
+  };
 
-    
-    const handleInfantClickneg = ()=> {
-        if (infant > 1) {
-            setInfant(infant-1)
-        }
-    }
-
-    const handleInfantClickpos = ()=> {
-        setInfant(infant+1)
-    }
-
-    const handleRoomClickneg = ()=> {
-        if (room > 1) {
-            setRoom(room-1)
-        }
-    }
-
-
-    const handleRoomClickpos = ()=> {
-        setRoom(room+1)
-    }
+  const handleRoomClickpos = () => {
+    setRoom(room + 1);
+  };
 
   return (
     <div className="bg-gradient-to-b from-blue-900 opacity-80 to-transparent min-h-[400px] flex flex-col justify-center items-center">
-      <h1 className="text-3xl font-bold mb-8 pt-6 text-white">Find your hotel</h1>
+      <h1 className="text-3xl font-bold mb-8 pt-6 text-white">
+        Find your hotel
+      </h1>
       <div className="flex justify-between w-full max-w-md bg-white rounded-md shadow-md p-4">
         <div className="flex flex-col">
           <label
@@ -72,21 +71,85 @@ function HotelSearch() {
           </select>
         </div>
         <div className="flex justify-between w-full max-w-40 rounded-lg m-2 bg-slate-200 hover:bg-slate-300">
-            <button onClick={()=> setModal(!modal)} type="text" className="w-[1000px]" >{`${room} Room(s),  ${adult + children + infant} Guest(s)`}</button>
-            </div>
-        <div className={`absolute bg-white border border-slate-600 rounded-xl right-[20px] mt-[60px] md:right-[550px] md:mt-[85px] p-7 z-10 ${!modal ? "hidden" : "visible"}`}>
-            <div className="flex justify-between text-xl ">
-                <span>Adult</span> <span className="flex pl-5"><button className="text-3xl" onClick={handleAdultClickneg}>-</button> <input className="w-5 text-center mx-5" disabled type="" value={adult} /> <button className="text-2xl" onClick={handleAdultClickpos}>+</button></span>
-            </div>
-            <div className="flex justify-between text-xl">
-                <span>Children</span> <span className="flex pl-5"><button className="text-3xl" onClick={handleChildrenClickneg}>-</button> <input className="w-5 text-center mx-5" disabled type="" value={children} /> <button className="text-2xl" onClick={handleChildrenClickpos}>+</button></span>
-            </div>
-            <div className="flex justify-between text-xl">
-                <span>Infant</span> <span className="flex pl-5"><button className="text-3xl" onClick={handleInfantClickneg}>-</button> <input className="w-5 text-center mx-5" disabled type="" value={infant} /> <button className="text-2xl" onClick={handleInfantClickpos}>+</button></span>
-            </div>
-            <div className="flex justify-between text-xl">
-                <span>Room</span> <span className="flex pl-5"><button className="text-3xl" onClick={handleRoomClickneg}>-</button> <input className="w-5 text-center mx-5" disabled type="" value={room} /> <button className="text-2xl" onClick={handleRoomClickpos}>+</button></span>
-            </div>
+          <button
+            onClick={() => setModal(!modal)}
+            type="text"
+            className="w-[1000px]"
+          >{`${room} Room(s),  ${adult + children + infant} Guest(s)`}</button>
+        </div>
+        <div
+          className={`absolute bg-white border border-slate-600 rounded-xl right-[20px] mt-[60px] md:right-[550px] md:mt-[85px] p-7 z-10 ${
+            !modal ? "hidden" : "visible"
+          }`}
+        >
+          <div className="flex justify-between text-xl ">
+            <span>Adult</span>{" "}
+            <span className="flex pl-5">
+              <button className="text-3xl" onClick={handleAdultClickneg}>
+                -
+              </button>{" "}
+              <input
+                className="w-5 text-center mx-5"
+                disabled
+                type=""
+                value={adult}
+              />{" "}
+              <button className="text-2xl" onClick={handleAdultClickpos}>
+                +
+              </button>
+            </span>
+          </div>
+          <div className="flex justify-between text-xl">
+            <span>Children</span>{" "}
+            <span className="flex pl-5">
+              <button className="text-3xl" onClick={handleChildrenClickneg}>
+                -
+              </button>{" "}
+              <input
+                className="w-5 text-center mx-5"
+                disabled
+                type=""
+                value={children}
+              />{" "}
+              <button className="text-2xl" onClick={handleChildrenClickpos}>
+                +
+              </button>
+            </span>
+          </div>
+          <div className="flex justify-between text-xl">
+            <span>Infant</span>{" "}
+            <span className="flex pl-5">
+              <button className="text-3xl" onClick={handleInfantClickneg}>
+                -
+              </button>{" "}
+              <input
+                className="w-5 text-center mx-5"
+                disabled
+                type=""
+                value={infant}
+              />{" "}
+              <button className="text-2xl" onClick={handleInfantClickpos}>
+                +
+              </button>
+            </span>
+          </div>
+          <div className="flex justify-between text-xl">
+            <span>Room</span>{" "}
+            <span className="flex pl-5">
+              <button className="text-3xl" onClick={handleRoomClickneg}>
+                -
+              </button>{" "}
+              <input
+                className="w-5 text-center mx-5"
+                disabled
+                type=""
+                value={room}
+              />{" "}
+              <button className="text-2xl" onClick={handleRoomClickpos}>
+                +
+              </button>
+            </span>
+          </div>
         </div>
       </div>
       <div className="flex justify-between items-center w-full max-w-md mt-4">
@@ -126,7 +189,9 @@ function HotelSearch() {
           Search
         </button>
       </div>
-      <h1 className='text-center text-3xl my-6 font-medium'>Your Search Results</h1>
+      <h1 className="text-center text-3xl my-6 font-medium">
+        Your Search Results
+      </h1>
     </div>
   );
 }

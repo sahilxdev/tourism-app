@@ -28,10 +28,10 @@ const AppBar = () => {
             Login
           </button>
         </a>
-      </div>
           <div className="md:hidden">
           <HamburgerMenu/>
           </div>
+      </div>
     </div>
   );
 };
