@@ -148,7 +148,7 @@ const NavBar = () => {
           </button>
         </Link>
         <Link to={'/hotel-form'}>
-          <div className="fixed top-[85vh] right-5 md:top-2 md:right-[9.5rem] z-40">
+          <div className="fixed md:absolute top-[85vh] right-5 md:top-2 md:right-[9.5rem] z-40">
             <button className="rounded-full border border-slate-700  hover:bg-green-500 w-16 h-16 md:h-12 bg-green-400 p-2">
               Form
             </button>
