@@ -20,7 +20,7 @@ const BusPage = () => {
                 <div className='relative mx-auto rounded-xl shadow-md flex flex-col justify-center'>
                 <button className=' p-3 bg-[#FF8782] mb-6 rounded-xl text-white text-xl'>Private Bus Booking</button>
                     <img className='w-[30rem]' src="https://sublimeislands.in/assets/bannerbus-e49a1f2b.png" alt="" />
-                    <h1 className='text-4xl w-70 font-medium absolute bottom-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white'>Private Bus</h1>
+                    <h1 className='text-3xl md:text-4xl w-70 font-medium absolute bottom-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white'>Private Bus</h1>
                     <p className='w-72 text-center absolute bottom-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white'>Search Private Inter-island Seater Bus Schedule</p>
                     <button className='absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-3 bg-[#FF8782] rounded-md'> <span className='pr-2 align-middle'><BusIcon/></span>Schedule</button>
                 </div>

@@ -29,7 +29,7 @@ const WaterSports = () => {
         <div className="flex flex-col md:col-span-3">
           <div className="flex flex-col md:ml-16 md:flex-row gap-5 md:gap-0  items-center max-w-[730px] md:flex md:justify-between">
             <div>
-              <h1 className="md:pl-16 text-5xl">
+              <h1 className="md:pl-16  text-3xl md:text-5xl">
                 {WaterSportsData[count].name}
               </h1>
             </div>
@@ -86,10 +86,10 @@ const WaterSports = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[560px] mx-auto md:block">
+              <div className="ml-3 md:ml-0 md:block">
                 <iframe
-                  className="rounded-xl shadow-lg "
-                  width="545"
+                  className="rounded-xl shadow-lg w-[355px] md:w-full"
+                  width="355"
                   height="315"
                   src={WaterSportsData[count].YTurl}
                   title="YouTube video player"
@@ -105,16 +105,16 @@ const WaterSports = () => {
 
       <div className="md:flex md:justify-around">
         <div>
-          <div className="flex justify-around mt-2 -translate-y-[460px] md:translate-x-0 md:-translate-y-0">
+          <div className="grid grid-cols-2 gap-[168px] mt-2 -translate-y-[460px] md:translate-x-0 md:-translate-y-0">
             <button
               onClick={prevImage}
-              className="bg-blue-400 text-white rounded p-2 mr-5 align-middle"
+              className="bg-blue-400 text-white rounded p-2 mr-5 align-middle w-24"
             >
               <span className="pr-2 text-xl align-middle">〈</span> Prev
             </button>
             <button
               onClick={nextImage}
-              className="bg-blue-400 text-white align-middle rounded p-2 ml-2"
+              className="bg-blue-400 text-white align-middle w-24 rounded p-2 ml-2"
             >
               Next <span className="pl-2 text-xl align-middle ">〉</span>
             </button>

@@ -86,10 +86,10 @@ const Trekking = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[560px] mx-auto md:block">
+              <div className="ml-3 md:ml-0 md:block">
                 <iframe
-                  className="rounded-xl shadow-lg "
-                  width="545"
+                  className="rounded-xl shadow-lg w-[355px] md:w-full"
+                  width="355"
                   height="315"
                   src={TrekkingData[count].YTurl}
                   title="YouTube video player"
@@ -105,7 +105,7 @@ const Trekking = () => {
 
       <div className="md:flex md:justify-around">
         <div>
-          <div className="flex justify-around mt-2 -translate-y-[460px] md:translate-x-0 md:-translate-y-0">
+          <div className="grid grid-cols-2 gap-[168px] mt-2 -translate-y-[460px] md:translate-x-0 md:-translate-y-0">
             <button
               onClick={prevImage}
               className="bg-blue-400 text-white rounded p-2 mr-5 align-middle"
