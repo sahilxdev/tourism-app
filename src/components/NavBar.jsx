@@ -18,9 +18,9 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-[80vw] mr-14 md:mr-0 grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-16 justify-evenly mt-5">
+      <div className="w-[80vw] mr-10 md:mr-0 grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-16 justify-evenly mt-5">
         <Link to={"/"}>
-          <div className="flex flex-col items-center focus:ring-2 text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center focus:ring-2 text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <FlightIcon />
             </div>
@@ -30,7 +30,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/hotels"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <HotelIcon />
             </div>
@@ -40,7 +40,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/ships"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <ShipIcon />
             </div>
@@ -50,7 +50,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/bus"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <BusIcon />
             </div>
@@ -60,7 +60,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/cabs"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <CabIcon />
             </div>
@@ -70,7 +70,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/ferries"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <FerryIcon2 />
             </div>
@@ -80,7 +80,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/water-sports"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <WaterSportIcon />
             </div>
@@ -90,7 +90,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/pg"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <PgIcon />
             </div>
@@ -100,7 +100,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/packages"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <PackageIcon />
             </div>
@@ -110,7 +110,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/dining"}>
-          <div className="flex flex-col items-center text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <DiningIcon />
             </div>
@@ -120,7 +120,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/trekking"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <TrekkingIcon />
             </div>
@@ -130,7 +130,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to={"/shop"}>
-          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-10 hover:bg-slate-200">
+          <div className="flex flex-col items-center  text-gray-400 hover:text-gray-700 text-center cursor-pointer rounded-xl justify-center px-8 hover:bg-slate-200">
             <div className="text-4xl text-center px-2 ">
               <ShopIcon />
             </div>
