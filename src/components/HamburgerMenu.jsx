@@ -46,7 +46,7 @@ const HamburgerMenu = () => {
         )}
       </button>
       {isOpen && (
-        <div className=" inset-0 bg-gray-900 opacity-75 transition-opacity duration-300 absolute top-24 ease-in-out z-10">
+        <div className=" inset-0 bg-gray-900 opacity-95 transition-opacity duration-300 absolute top-14 ease-in-out z-10">
           <div className="flex flex-col pl-8  h-screen pt-6 px-6 bg-white overflow-y-auto">
             {/* Your menu content here */}
             <ul className="space-y-2 flex flex-col justify-evenly">

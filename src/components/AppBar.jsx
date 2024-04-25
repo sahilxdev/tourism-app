@@ -5,7 +5,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 const AppBar = () => {
   return (
-    <div className="flex justify-between items-center p-4 border-b-2 shadow-md shadow-slate-300">
+    <div className="flex justify-between items-center p-4 border-b-2 shadow-md shadow-slate-300 h-16 md:h-auto">
       <div>
         <img className="w-32" src={logo} alt="logo" />
       </div>
